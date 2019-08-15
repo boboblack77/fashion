@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fashion</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <style>
+        .header{
+            /* position: absolute; */
+            padding: 10px;
+            left: 200px;
+        }
+        .image{   
+            /* position: absolute; */
+            border-radius: 15px;
+        }
+        .ceo{
+            /* position: absolute; */
+            left: 400px;
+            padding: 30px;
+            /* background-color: red; */
+        }
+        .manager{
+            position: absolute;
+            top: 310px;
+            left: 650px;
+        }
+        .manager1{
+            position: absolute;
+            top: 310px;
+            right: 200px;
+        }        
+        
+        .text{
+            padding: 35px;
+        }
+        /* DROP DOWN CLICK STARTS HERE */
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #4b504b;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {background-color: #f1f1f1}
+
+        .show {display:block;}
+        /* DROP DOWN CLICK STOPS HERE */
+        </style>
+    <BODY>
+        <div id="wrapper" class="container">
+            <section class="navbar main-menu">
+                <div class="navbar-inner main-menu">
+                    <!-- <a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a> -->
+                    <nav id="menu" class="pull-right">
+                        <ul>
+                            <li><a href="./products.html">New</a>
+                                <ul>
+                                    <li><a href="./products.html">Cloths</a></li>
+                                    <li><a href="./products.html">Shoes</a></li>
+                                    <li><a href="./products.html">Undies</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./woman.html">Woman</a>
+                                <!-- <ul>
+                                        <li><a href="./products.html">Gown</a></li>									
+                                        <li><a href="./products.html">Corporate</a></li>
+                                        <li><a href="./products.html">Jeans</a></li>									
+                                    </ul> -->
+                            </li>
+                            <li><a href="./man.html">Man</a></li>
+                            <li><a href="./products.html">Children</a></li>
+                            <li><a href="./contact.html">Contact us</a></li>
+                            <li><a href="./about.html">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <hr class="soften">
+        <div class="header">
+            <h1>About us</h1>
+            <h2>Meet The Team </h2>
+        </div>
+        <hr class="soften">
+        <div class="row">
+            <div class="span8">
+                <div class="ceo">
+                    <p class="image"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+                        <h5>CEO &amp; Co-Founder</h5>
+                        <h3>John Doe.</h3>
+                       <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Contact Me</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#contact">07057555617</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="manager">
+                    <p class="image1"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+                        <h5>Manager</h5>
+                        <h3>Jane Doe.</h3>
+                       <!-- <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Contact Me</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#contact">07057555617</a>
+                            </div>
+                        </div> -->
+                </div>
+                <div class="manager1">
+                    <p class="image1"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+                        <h5>Secretary</h5>
+                        <h3>Jack Doe.</h3>
+                       <!-- <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Contact Me</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#contact">07057555617</a>
+                            </div>
+                        </div> -->
+                </div>
+                <div class="text">
+                    <h6>
+                        I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+                    </h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate ex enim. Doloremque facilis qui dolore illum, unde hic consequatur odit vero<br> 
+                        laceat sequi fugiat molestias, numquam ex voluptas veritatis?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo autem aspernatur. Facere et reprehenderit necessitatibus cumque tempore! Rerum similique 
+                        harum quibusdam itaque libero suscipit minima! Unde voluptatum neque nulla?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis debitis hic unde excepturi delectus distinctio accusamus voluptatum architecto, ipsa voluptatibus 
+                        placeat corporis illo animi nulla, iste beatae explicabo dolorem culpa?
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatum rerum saepe? Necessitatibus vitae voluptatem dicta rem sequi nesciunt minus? Atque, temporibus. 
+                        Maiores eveniet aut quis labore sapiente quidem itaque.
+                    </p>
+                </div>
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                    }
+                }
+                </script>
+            </div>
+        </div>
+</BODY>

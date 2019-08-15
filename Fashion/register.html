@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap E-commerce Templates</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<style>
+		.header{
+				/* position: absolute; */
+				padding: 10px;
+				left: 200px;
+		}
+		.image{   
+				/* position: absolute; */
+				border-radius: 15px;
+		}
+		.ceo{
+				/* position: absolute; */
+				left: 400px;
+				padding: 30px;
+				/* background-color: red; */
+		}
+		.manager{
+				position: absolute;
+				top: 310px;
+				left: 650px;
+		}
+		.manager1{
+				position: absolute;
+				top: 310px;
+				right: 200px;
+		}        
+		
+		.text{
+				padding: 35px;
+		}
+		/* DROP DOWN CLICK STARTS HERE */
+		.dropbtn {
+				background-color: black;
+				color: white;
+				padding: 20px;
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+				background-color: #4b504b;
+		}
+
+		.dropdown {
+				position: relative;
+				display: inline-block;
+		}
+
+		.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				overflow: auto;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+		}
+
+		.dropdown a:hover {background-color: #f1f1f1}
+
+		.show {display:block;}
+		</style>
+    <body>		
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu">
+				<div class="navbar-inner main-menu">				
+					<a href="index.html" class="logo pull-left"><img src="themes/images//logo.png" class="site_logo" alt=""></a>
+					<nav id="menu" class="pull-right">
+						<ul>
+							<li><a href="./products.html">New</a>
+								<ul>									
+									<li><a href="./products.html">CLoths</a></li>
+									<li><a href="./products.html">Shoes</a></li>
+									<li><a href="./products.html">Undies</a></li>
+								</ul>
+							</li>			
+							<li><a href="./woman.html">Woman</a>					
+								<!-- <ul>
+									<li><a href="./products.html">Lacinia nibh</a></li>									
+									<li><a href="./products.html">Eget molestie</a></li>
+									<li><a href="./products.html">Varius purus</a></li>									
+								</ul> -->
+							</li>															
+							<li><a href="./man.html">Man</a></li>							
+							<li><a href="./products.html">Chidren</a></li>
+							<li><a href="./products.html">contact us</a></li>
+							<li><a href="./products.html">About us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>			
+			<section class="header_text sub">
+			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
+				<h3><span>Register</span></h3>
+			</section>			
+			<!-- <section class="main-content">				
+				<div class="row">
+					<div class="span5">					
+						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
+						<form action="#" method="post">
+							<input type="hidden" name="next" value="/">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Username</label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Username</label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your password" id="password" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<input tabindex="3" class="btn btn-inverse large" type="submit" value="Sign into your account">
+									<hr>
+									<p class="reset">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
+								</div>
+							</fieldset>
+						</form>				
+					</div>
+					<div class="span7">					
+						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
+						<form action="#" method="post" class="form-stacked">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Username</label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your username" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Email address:</label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your email" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Password:</label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your password" class="input-xlarge">
+									</div>
+								</div>							                            
+								<div class="control-group">
+									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
+								</div>
+								<hr>
+								<div class="actions"><input tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
+							</fieldset>
+						</form>					
+					</div>				
+				</div>
+			</section>			 -->
+			<div class="header">
+				<h1>About us</h1>
+				<h2>Meet The Team </h2>
+		</div>
+		<hr class="soften">
+		<div class="row">
+				<div class="span8">
+						<div class="ceo">
+								<p class="image"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+										<h5>CEO &amp; Co-Founder</h5>
+										<h3>John Doe.</h3>
+									 <div class="dropdown">
+												<button onclick="myFunction()" class="dropbtn">Contact Me</button>
+												<div id="myDropdown" class="dropdown-content">
+														<a href="#contact">07057555617</a>
+												</div>
+										</div>
+						</div>
+						<div class="manager">
+								<p class="image1"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+										<h5>Manager</h5>
+										<h3>Jane Doe.</h3>
+									 <!-- <div class="dropdown">
+												<button onclick="myFunction()" class="dropbtn">Contact Me</button>
+												<div id="myDropdown" class="dropdown-content">
+														<a href="#contact">07057555617</a>
+												</div>
+										</div> -->
+						</div>
+						<div class="manager1">
+								<p class="image1"><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="image 2" /></a>
+										<h5>Secretary</h5>
+										<h3>Jack Doe.</h3>
+									 <!-- <div class="dropdown">
+												<button onclick="myFunction()" class="dropbtn">Contact Me</button>
+												<div id="myDropdown" class="dropdown-content">
+														<a href="#contact">07057555617</a>
+												</div>
+										</div> -->
+						</div>
+						<div class="text">
+								<h6>
+										I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+								</h6>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate ex enim. Doloremque facilis qui dolore illum, unde hic consequatur odit vero<br> 
+										laceat sequi fugiat molestias, numquam ex voluptas veritatis?
+								</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo autem aspernatur. Facere et reprehenderit necessitatibus cumque tempore! Rerum similique 
+										harum quibusdam itaque libero suscipit minima! Unde voluptatum neque nulla?
+								</p>
+								<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis debitis hic unde excepturi delectus distinctio accusamus voluptatum architecto, ipsa voluptatibus 
+										placeat corporis illo animi nulla, iste beatae explicabo dolorem culpa?
+								</p>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatum rerum saepe? Necessitatibus vitae voluptatem dicta rem sequi nesciunt minus? Atque, temporibus. 
+										Maiores eveniet aut quis labore sapiente quidem itaque.
+								</p>
+						</div>
+				<script>
+						/* When the user clicks on the button, 
+						toggle between hiding and showing the dropdown content */
+						function myFunction() {
+								document.getElementById("myDropdown").classList.toggle("show");
+						}
+						
+						// Close the dropdown if the user clicks outside of it
+						window.onclick = function(event) {
+								if (!event.target.matches('.dropbtn')) {
+						
+								var dropdowns = document.getElementsByClassName("dropdown-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+										var openDropdown = dropdowns[i];
+										if (openDropdown.classList.contains('show')) {
+										openDropdown.classList.remove('show');
+										}
+								}
+								}
+						}
+						</script>
+
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3">
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="./index.html">Homepage</a></li>  
+							<li><a href="./about.html">About Us</a></li>
+							<li><a href="./contact.html">Contac Us</a></li>
+							<!-- <li><a href="./cart.html">Your Cart</a></li> -->
+							<!-- <li><a href="./register.html">Login</a></li>							 -->
+						</ul>					
+					</div>
+					<div class="span5">
+						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
+						<br/>
+						<span class="social_icons">
+							<a class="facebook" href="#">Facebook</a>
+							<a class="twitter" href="#">Twitter</a>
+							<a class="skype" href="#">Skype</a>
+							<a class="vimeo" href="#">Vimeo</a>
+						</span>
+					</div>					
+				</div>	
+			</section>
+			<section id="copyright">
+				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
+			</section>
+		</div>
+		<script src="themes/js/common.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#checkout').click(function (e) {
+					document.location.href = "checkout.html";
+				})
+			});
+		</script>		
+    </body>
+</html>
